@@ -1,0 +1,25 @@
+{
+  "name": "A-quote-a-day-keeps-the-haters-away",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AldairGithub/A-quote-a-day-keeps-the-haters-away.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AldairGithub/A-quote-a-day-keeps-the-haters-away/issues"
+  },
+  "homepage": "https://github.com/AldairGithub/A-quote-a-day-keeps-the-haters-away#readme"
+}
