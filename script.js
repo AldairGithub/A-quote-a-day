@@ -1,4 +1,4 @@
-
+// code
 const BASE_URL = 'https://api.paperquotes.com/apiv1/quotes/'
 const API_KEY = '271a0e585e81a539860056fbfdf20127b30fb051'
 
