@@ -1,1 +1,2 @@
-# A-quote-a-day-keeps-the-haters-away
+## A-quote-a-day
+This project is made with a free account from PaperQuotes, to practice making api calls using a free key and getting responses.
