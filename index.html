@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Quote Generator</title>
   </head>
   <body>
-    <div id='ontainer'>
+    <div class='container'>
       <h1>Quote of the day!</h1>
       <div class='quote'></div>
+      <div class='button-container'>
+        <button class='button'>Press me for more quotes</button>
+      </div>
+    </div>
+    <div class='footer'>
+      <p>Photo by <a target='_blank' href="https://unsplash.com/@mishalibrahim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mishal Ibrahim</a> on <a target='_blank' href="/s/photos/arms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
+      <span style="z-index:50;font-size:0.9em;">
+        <img src="http://api.paperquotes.com/static/images/paperquotes.png" height="20" width="20" alt="paperquotes.com"/>
+        <a target='_blank' href="http://paperquotes.com" title="Powered by quotes from paperquotes.com" style="color: #9fcc25; margin-left: 4px; vertical-align: middle;">paperquotes.com
+        </a>
+      </span>
     </div>
   </body>
 </html>
