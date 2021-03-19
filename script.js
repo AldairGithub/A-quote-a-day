@@ -1,5 +1,5 @@
 // code
-const BASE_URL = 'https://api.paperquotes.com/apiv1/quotes/'
+const BASE_URL = 'https://api.paperquotes.com/apiv1/quotes/?order=-likes&limit=25'
 const API_KEY = '271a0e585e81a539860056fbfdf20127b30fb051'
 
 const getQuote = async (ele) => {
@@ -9,7 +9,8 @@ const getQuote = async (ele) => {
         'Authorization': `Token ${API_KEY}`
       }
     })
-    const number = Math.floor(Math.random() * 5)
+    console.log(response)
+    const number = Math.floor(Math.random() * 25)
     const quote = response.data.results[number].quote
     const author = response.data.results[number].author
     createQuote(quote, author, ele)
@@ -40,9 +41,9 @@ const buttonEvent = document.getElementsByTagName("button")
 
 buttonEvent[0].addEventListener('click', function () {
   // removes existing quote on page render, will not render quote unless it deletes existing quote first
-  // removeQuote()
-  // getQuote(quoteContainer)
+  removeQuote()
+  getQuote(quoteContainer)
 })
 
-// getQuote(quoteContainer)
+getQuote(quoteContainer)
 
