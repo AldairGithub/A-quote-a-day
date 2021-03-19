@@ -1,5 +1,6 @@
 // code
 const BASE_URL = 'https://api.paperquotes.com/apiv1/quotes/?order=-likes&limit=25'
+// limit of 500 calls per month for free account on PaperQuotes
 const API_KEY = '271a0e585e81a539860056fbfdf20127b30fb051'
 
 const getQuote = async (ele) => {
@@ -9,7 +10,6 @@ const getQuote = async (ele) => {
         'Authorization': `Token ${API_KEY}`
       }
     })
-    console.log(response)
     const number = Math.floor(Math.random() * 25)
     const quote = response.data.results[number].quote
     const author = response.data.results[number].author
